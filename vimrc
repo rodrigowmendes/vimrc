@@ -11,6 +11,7 @@ Plug 'vim-python/python-syntax'
 Plug 'ekalinin/dockerfile.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
+Plug 'davidhalter/jedi-vim'
 call plug#end()
 
 set number
