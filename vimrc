@@ -12,8 +12,11 @@ Plug 'ekalinin/dockerfile.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 Plug 'davidhalter/jedi-vim'
+Plug 'preservim/nerdtree'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
+set encoding=UTF-8
 set number
 set clipboard=unnamedplus
 
@@ -35,3 +38,14 @@ let g:lightline = {
       \   'gitbranch': 'gitbranch#name'
       \ },
       \ }
+
+"Mapeamentos do explorador de arquivos
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+" Fecha o VIM se o explorador for a única janela restante
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
+
