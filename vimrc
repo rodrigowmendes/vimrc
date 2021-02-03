@@ -14,12 +14,12 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'davidhalter/jedi-vim'
 Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
-set encoding=UTF-8
+set encoding=utf8
 set number
 set clipboard=unnamedplus
-
 "Preferências
 
 "netrw
@@ -45,7 +45,12 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+"Configurações do explorador de arquivos
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
 " Fecha o VIM se o explorador for a única janela restante
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
+
 
