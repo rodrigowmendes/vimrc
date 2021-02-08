@@ -14,7 +14,6 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'davidhalter/jedi-vim'
 Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
-Plug 'Yggdroot/indentLine'
 call plug#end()
 
 set encoding=utf8
