@@ -9,11 +9,11 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'vim-python/python-syntax'
 Plug 'ekalinin/dockerfile.vim'
-Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 Plug 'davidhalter/jedi-vim'
 Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 set encoding=utf8
