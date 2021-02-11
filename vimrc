@@ -38,6 +38,5 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
 " Fecha o VIM se o explorador for a única janela restante
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 &&
-exists('b:NERDTree') && b:NERDTree.isTabTree() |
-\ quit | endif"
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
